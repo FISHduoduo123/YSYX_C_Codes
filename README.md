@@ -12,7 +12,7 @@
 ```
 #### 目录
 ```
-	my_c_learning/
+	main/
 		|---- notes
 		|---- codes
 ```
