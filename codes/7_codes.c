@@ -249,3 +249,20 @@ struct complex_struct make_from_mag_ang(double r, double A)
 	z.b = A;
 	return z;
 }
+
+/*
+编译运行下面这段程序：
+#include <stdio.h>
+
+enum coordinate_type { RECTANGULAR = 1, POLAR };
+
+int main(void)
+{
+	int RECTANGULAR;
+	printf("%d %d\n", RECTANGULAR, POLAR);
+	return 0;
+}
+结果是什么？并解释一下为什么是这样的结果。
+运行结果打印0 2 ，因为枚举的成员变量名却和变量名在同一命名空间中，
+所以会出现命名冲突，将int RECTANGULAR作为最新变量打印0而不是1.
+*/
