@@ -94,36 +94,36 @@
 #### 13. 本阶段总结
 ### II. C语言本质
 #### 14. 计算机中数的表示
-  1. **[为什么计算机用二进制计数](https://akaedu.github.io/book/ch14s01.html)**
-  2. **[不同进制之间的换算](https://akaedu.github.io/book/ch14s02.html)**
-  3. **整数的加减运算**
-  3.1. [Sign and Magnitude表示法](https://akaedu.github.io/book/ch14s03.html#id2753623)
-  3.2. [1's Complement表示法](https://akaedu.github.io/book/ch14s03.html#id2753761)
-  3.3. [2's Complement表示法](https://akaedu.github.io/book/ch14s03.html#id2753996)
-  3.4. [有符号数和无符号数](https://akaedu.github.io/book/ch14s03.html#id2754091)
-  4. **[浮点数](https://akaedu.github.io/book/ch14s04.html)**
+  1. **[为什么计算机用二进制计数](https://akaedu.github.io/book/ch14s01.html)**  
+  2. **[不同进制之间的换算](https://akaedu.github.io/book/ch14s02.html)**  
+  3. **[整数的加减运算](https://akaedu.github.io/book/ch14s03.html)**  
+  3.1. [Sign and Magnitude表示法](https://akaedu.github.io/book/ch14s03.html#id2753623)  
+  3.2. [1's Complement表示法](https://akaedu.github.io/book/ch14s03.html#id2753761)  
+  3.3. [2's Complement表示法](https://akaedu.github.io/book/ch14s03.html#id2753996)  
+  3.4. [有符号数和无符号数](https://akaedu.github.io/book/ch14s03.html#id2754091)  
+  4. **[浮点数](https://akaedu.github.io/book/ch14s04.html)**  
 #### 15. 数据类型详解
-  1. [整型]()
-  2. [浮点型]()
-  3. [类型转换]()
-  3.1. [Integer Promotion]()
-  3.2. [Usual Arithmetic Conversion]()
-  3.3. [由赋值产生的类型转换]()
-  3.4. [强制类型转换]()
-  3.5. [编译器如何处理类型转换]()
+  1. **[整型](https://akaedu.github.io/book/ch15s01.html)**  
+  2. **[浮点型](https://akaedu.github.io/book/ch15s02.html)**  
+  3. **[类型转换](https://akaedu.github.io/book/ch15s03.html)**  
+  3.1. [Integer Promotion](https://akaedu.github.io/book/ch15s03.html#id2757955)  
+  3.2. [Usual Arithmetic Conversion](https://akaedu.github.io/book/ch15s03.html#id2758200)  
+  3.3. [由赋值产生的类型转换](https://akaedu.github.io/book/ch15s03.html#id2758516)  
+  3.4. [强制类型转换](https://akaedu.github.io/book/ch15s03.html#id2758655)  
+  3.5. [编译器如何处理类型转换](https://akaedu.github.io/book/ch15s03.html#id2758764)  
 #### 16. 运算符详解
-  1. [位运算]()
-  1.1. [按位与、或、异或、取反运算]()
-  1.2. [移位运算]()
-  1.3. [掩码]()
-  1.4. [异或运算的一些特性]()
-  2. [其它运算符]()
-  2.1. [复合赋值运算符]()
-  2.2. [条件运算符]()
-  2.3. [逗号运算符]()
-  2.4. [sizeof运算符与typedef类型声明]()
-  3. [Side Effect与Sequence Point]()
-  4. [运算符总结]()
+  1. **[位运算](https://akaedu.github.io/book/ch16s01.html)**  
+  1.1. [按位与、或、异或、取反运算](https://akaedu.github.io/book/ch16s01.html#id2761062)  
+  1.2. [移位运算](https://akaedu.github.io/book/ch16s01.html#id2761805)  
+  1.3. [掩码](https://akaedu.github.io/book/ch16s01.html#id2761995)  
+  1.4. [异或运算的一些特性](https://akaedu.github.io/book/ch16s01.html#id2762114)  
+  2. **[其它运算符](https://akaedu.github.io/book/ch16s02.html)**  
+  2.1. [复合赋值运算符](https://akaedu.github.io/book/ch16s02.html#id2762352)  
+  2.2. [条件运算符](https://akaedu.github.io/book/ch16s02.html#id2762537)  
+  2.3. [逗号运算符](https://akaedu.github.io/book/ch16s02.html#id2762598)  
+  2.4. [sizeof运算符与typedef类型声明](https://akaedu.github.io/book/ch16s02.html#id2762676)  
+  3. **[Side Effect与Sequence Point](https://akaedu.github.io/book/ch16s03.html)**  
+  4. **[运算符总结](https://akaedu.github.io/book/ch16s04.html)**  
 #### 21. 预处理
   1. 预处理的步骤
   2. 宏定义
