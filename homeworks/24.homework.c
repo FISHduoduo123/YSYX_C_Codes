@@ -36,6 +36,7 @@ This Content hoho is ok ok? file system uttered words ok ok ? end.
 char *shrink_space(char *dest, const char *src, size_t n);
 各项参数和返回值的含义和strncpy类似。完成之后，为自己实现的函数写一个Man Page。
 */
+<<<<<<< Updated upstream
 #include <stdio.h>
 #include <string.h>
 
@@ -57,3 +58,7 @@ int main(void) {
     printf("data:%s\n",shrink_space(dest,s,3));
     return 0;
 }
+=======
+
+
+>>>>>>> Stashed changes
