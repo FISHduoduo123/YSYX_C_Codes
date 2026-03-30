@@ -32,11 +32,7 @@ end.
 
 This Content hoho is ok ok? file system uttered words ok ok ? end.
 实现该功能的函数接口要求符合下述规范：
-
-char *shrink_space(char *dest, const char *src, size_t n);
-各项参数和返回值的含义和strncpy类似。完成之后，为自己实现的函数写一个Man Page。
 */
-
 #include <stdio.h>
 #include <string.h>
 
@@ -58,6 +54,55 @@ int main(void) {
     printf("data:%s\n",shrink_space(dest,s,3));
     return 0;
 }
+/*写一个插入排序的函数和一个折半查找的函数。*/
+#include <stdio.h>
+void swap (int*a,int*b)
+{
+    int temp;
+    temp = *b;
+    *b = *a;
+    *a = temp;
+}
+int* sort (int*arr,int len)
+{
+    if (len<=0) 
+    {
+        printf("长度错误\n");
+        return arr;
+    }
+    // 比较
+    for (int i=0;i<len-1;i++)
+    {
+        if (arr[i]>arr[i+1])
+        {
+            swap(&arr[i],&arr[i+1]);
+            for (int j=i;j>0;j--)
+            {
+                if (arr[j-1]>arr[j]) swap(&arr[j-1],&arr[j]);
+                else continue;
+            }
+        }
+    }
+    return arr;
+}
+
+int* search(int* arr, int d, int len) {
+    int start = 0;
+    int last = len - 1;
+    while (start <= last) {
+        int mid = start + (last - start) / 2;  // 防止溢出
+        if (arr[mid] == d) {
+            return &arr[mid];
+        } else if (arr[mid] > d) {
+            last = mid - 1;
+        } else {
+            start = mid + 1;
+        }
+    }
+    return NULL;  // 未找到
+}
+
+/*实现一个功能更完整的printf，能够识别%，能够处理%d、%f对应的整数参数。*/
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
