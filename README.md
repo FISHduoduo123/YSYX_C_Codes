@@ -15,7 +15,6 @@
 		|____ README.md
 ```
 ## 目录
-
 ### I. C语言入门
 #### 1.程序的基本概念
   1. [程序和编程语言](https://akaedu.github.io/book/intro.program.html)
@@ -68,12 +67,12 @@
   4. [函数]()
   5. [indent工具]()
 #### 11. 排序与查找
-  1. 算法的概念
-  2. 插入排序
-  3. 算法的时间复杂度分析
-  4. 归并排序
-  5. 线性查找
-  6. 折半查找
+  1. [算法的概念](https://akaedu.github.io/book/ch11s01.html)
+  2. [插入排序](https://akaedu.github.io/book/ch11s02.html)
+  3. [算法的时间复杂度分析](https://akaedu.github.io/book/ch11s03.html)
+  4. [归并排序](https://akaedu.github.io/book/ch11s04.html)
+  5. [线性查找](https://akaedu.github.io/book/ch11s05.html)
+  6. [折半查找](https://akaedu.github.io/book/ch11s06.html)
 #### 12. 栈与队列
   1. 数据结构的概念
   2. 堆栈
