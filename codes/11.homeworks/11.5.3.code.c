@@ -1,0 +1,65 @@
+/*进一步泛化，在一组随机排列的数中找出第k小的，这个元素称为k-th Order Statistic。能想到的最直观的算法肯定是先把这些数排序然后取第k个，时间复杂度和排序算法相同，可以是Θ(nlgn)。这个问题虽然比前两个问题复杂，但它也有平均情况下时间复杂度是Θ(n)的算法，将上一节习题1的快速排序算法稍加修改就可以解决这个问题：
+ 从start到end之间找出第k小的元素 
+int order_statistic(int start, int end, int k)
+{
+	用partition函数把序列分成两半，中间的pivot元素是序列中的第i个;
+	if (k == i)
+		返回找到的元素;
+	else if (k > i)
+		从后半部分找出第k-i小的元素并返回;
+	else
+		从前半部分找出第k小的元素并返回;
+}
+请编程实现这个算法。*/
+#include <stdio.h>
+#include <stdlib.h>
+
+// 全局数组（也可以作为参数传递，为简化使用全局）
+int a[100];
+
+// 交换两个整数
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+// 划分函数：将 a[start..end] 以 a[start] 为基准进行划分
+// 返回基准元素最终所在的位置（索引）
+int partition(int start, int end) {
+    int pivot = a[start];   // 选取第一个元素作为基准
+    int i = start + 1;      // 左指针，从 start+1 开始
+    int j = end;            // 右指针
+
+    while (i <= j) {
+        // 左指针向右找第一个大于 pivot 的元素
+        while (i <= j && a[i] <= pivot) i++;
+        // 右指针向左找第一个小于等于 pivot 的元素
+        while (i <= j && a[j] > pivot) j--;
+        if (i < j) {
+            swap(&a[i], &a[j]);
+            i++;
+            j--;
+        }
+    }
+    // 将基准元素放到正确位置（即 j 指向的位置）
+    swap(&a[start], &a[j]);
+    return j;   // 返回基准元素的新位置
+}
+
+// 找出第 k 小的元素（k 从 1 开始计数）
+int order_statistic(int start, int end, int k) {
+    if (start == end) return a[start];   // 只有一个元素
+
+    int pivot_index = partition(start, end);
+    int left_count = pivot_index - start + 1;   // 左半部分（含 pivot）的元素个数
+
+    if (k == left_count) {
+        return a[pivot_index];          // 正好是基准元素
+    } else if (k < left_count) {
+        return order_statistic(start, pivot_index - 1, k);   // 在左半部分找第 k 小
+    } else {
+        // 在右半部分找第 (k - left_count) 小
+        return order_statistic(pivot_index + 1, end, k - left_count);
+    }
+}
