@@ -13,8 +13,9 @@ Write a Makefile to compile the "Hello World" program above. If you do not know 
 编写编译脚本
 ![](https://github.com/FISHduoduo123/YSYX_C/blob/main/Linux/gdb_test/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-08%20174228.png)  
 运行Makefile完成编译  
-**运行可执行程序**  
 ![](https://github.com/FISHduoduo123/YSYX_C/blob/main/Linux/gdb_test/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-08%20174446.png)  
+**运行可执行程序**  
+![]()  
 ## Learn to use GDB
 Read the GDB tutorial above and use GDB following the tutorial. In PA1, you will be required to implement a simplified version of GDB. If you have not used GDB, you may have no idea to finish PA1.  
 ### GDB测试命令
