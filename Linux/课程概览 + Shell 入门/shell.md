@@ -3,7 +3,7 @@
 要打开 Shell 的提示符（即输入命令的地方），首先需要一个终端——它是与 Shell 交互的图形界面。你的设备很可能已预装了终端，如果没有也可以安装一个：  
 - Linux：按下 Ctrl + Alt + T（适用于大多数发行版），或者在应用菜单中搜索「终端（Terminal）」。
 - Windows：按下 Win + R ，输入 cmd 或 powershell ，然后按下 Enter 。也可以在开始菜单中搜索「终端（Terminal）」或「命令提示符（Command - Prompt）」。  
-macOS：按下 ⌘ Cmd + Space 打开 「聚焦（Spotlight）」，输入「终端（Terminal）」，然后按下 Enter 。还可以在「应用程序」→「实用工具」→「终端」中找到它。  
+- macOS：按下 ⌘ Cmd + Space 打开 「聚焦（Spotlight）」，输入「终端（Terminal）」，然后按下 Enter 。还可以在「应用程序」→「实用工具」→「终端」中找到它。  
 ## 在 Shell 中导航
 当你打开终端时，会看到一个通常长这样子的提示符：
 - ```missing:~$```
