@@ -94,7 +94,8 @@ lsl
 ![](https://github.com/FISHduoduo123/YSYX_C/blob/main/Linux/%E8%AF%BE%E7%A8%8B%E6%A6%82%E8%A7%88%20%2B%20Shell%20%E5%85%A5%E9%97%A8/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-10%20111430.png)  
 ![](https://github.com/FISHduoduo123/YSYX_C/blob/main/Linux/%E8%AF%BE%E7%A8%8B%E6%A6%82%E8%A7%88%20%2B%20Shell%20%E5%85%A5%E9%97%A8/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-10%20111421.png)  
 ## 把上一题完成的脚本保存为文件（如 check.sh）。先运行 ./check.sh somefile ，会发生什么？然后执行 chmod +x check.sh 再试一次。为什么这一步是必须的？（提示：比较 chmod 前后的 ls -l check.sh 输出）
-
+默认创建文件不具有可执行权限
+![]()
 ## 在脚本的 set 选项（flag）里加入 -x 会发生什么？写个简单脚本试试并观察输出。参见 The Set Builtin 。
 
 ## 写一条命令，把文件复制为带当天日期的备份文件名（例如 notes.txt → notes_2026-01-12.txt）。（提示：$(date +%Y-%m-%d)）参见 Command Substitution 。
