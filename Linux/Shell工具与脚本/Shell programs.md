@@ -11,10 +11,12 @@
  drwxr-xr-x   5 user group  160 Jan 14 09:53 .
  -rw-r--r--   1 user group  514 Jan 14 06:42 bar
  -rw-r--r--   1 user group 106M Jan 13 12:12 foo
- drwx------+ 47 user group 1.5K Jan 12 18:08 ..
- 
+ drwx------+ 47 user group 1.5K Jan 12 18:08 ..  
+ ![](https://github.com/FISHduoduo123/YSYX_C/blob/main/Linux/Shell%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%84%9A%E6%9C%AC/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-10%20184805.png)  
 ## 编写两个 bash 函数 marco 和 polo 执行下面的操作。 每当你执行 marco 时，当前的工作目录应当以某种形式保存，当执行 polo 时，无论现在处在什么目录下，都应当 cd 回到当时执行 marco 的目录。 为了方便 debug，你可以把代码写在单独的文件 marco.sh 中，并通过 source marco.sh 命令，（重新）加载函数。
-假设您有一个命令，它很少出错。因此为了在出错时能够对其进行调试，需要花费大量的时间重现错误并捕获输出。 编写一段 bash 脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容。 加分项：报告脚本在失败前共运行了多少次。
+![](https://github.com/FISHduoduo123/YSYX_C/blob/main/Linux/Shell%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%84%9A%E6%9C%AC/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-10%20191002.png)  
+
+## 假设您有一个命令，它很少出错。因此为了在出错时能够对其进行调试，需要花费大量的时间重现错误并捕获输出。 编写一段 bash 脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容。 加分项：报告脚本在失败前共运行了多少次。
 
  #!/usr/bin/env bash
 
